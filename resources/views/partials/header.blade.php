@@ -8,10 +8,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="{{route('home')}}" class="nav-link" aria-current="page" href="#">Home</a>
+            <a href="{{route('home')}}" class="nav-link {{(Route::currentRouteName() === 'home') ? 'active' : ''}}" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Comics</a>
+            <a href="{{route('comics.index')}}" class="nav-link {{(Route::currentRouteName() === 'comics.index' ? 'active' : '')}}" href="#">Comics</a>
           </li>
         </ul>
       </div>
