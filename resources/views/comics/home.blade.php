@@ -10,7 +10,7 @@
         <th scope="col">Title</th>
         <th scope="col">Price</th>
         <th scope="col">Type</th>
-        <th scope="col">Actions</th>
+        <th colspan="3" scope="col">Actions</th>
       </tr>
     </thead>
     <tbody>
@@ -20,7 +20,9 @@
           <td>{{$comic->title}}</td>
           <td>{{$comic->price}}</td>
           <td>{{$comic->type}}</td>
-          <td><a href="#" class="btn btn-success">SHOW</a></td>
+          <td><a href="{{route('comics.show', $comic)}}" class="btn btn-success">SHOW</a></td>
+          <td><a href="#" class="btn btn-primary">EDIT</a></td>
+          <td><a href="#" class="btn btn-danger">DELETE</a></td>
         </tr>
       @endforeach
       
