@@ -11,7 +11,10 @@
             <a href="{{route('home')}}" class="nav-link {{(Route::currentRouteName() === 'home') ? 'active' : ''}}" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a href="{{route('comics.index')}}" class="nav-link {{(Route::currentRouteName() === 'comics.index' ? 'active' : '')}}" href="#">Comics</a>
+            <a href="{{route('comics.index')}}" class="nav-link {{(Route::currentRouteName() === 'comics.index' ? 'active' : '')}}" href="#">Lista fumetti</a>
+          </li>
+          <li class="nav-item">
+            <a href="{{route('comics.create')}}" class="nav-link {{(Route::currentRouteName() === 'comics.create' ? 'active' : '')}}" href="#">Nuovo fumetto</a>
           </li>
         </ul>
       </div>

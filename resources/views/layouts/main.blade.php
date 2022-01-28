@@ -8,10 +8,10 @@
   <title>Laravel Base CRUD</title>
 </head>
 <body>
-  <div class="container">
-    @include('partials.header')
+ 
+  @include('partials.header')
 
-    @yield('content')
-  </div>
+  @yield('content')
+  
 </body>
 </html>
