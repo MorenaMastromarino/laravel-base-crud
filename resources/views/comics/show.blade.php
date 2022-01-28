@@ -15,7 +15,8 @@
     <h5>Description:</h5>
     <p>{{$comic->description}}</p>
 
-
+    <a href="{{route('comics.edit', $comic)}}" class="btn btn-primary">EDIT</a>
+    
     <a href="{{route('comics.index')}}"><< back</a>
 
   </div>
