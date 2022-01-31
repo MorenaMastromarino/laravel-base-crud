@@ -2,6 +2,7 @@
 
 @section('content')
   <div class="container">
+
     <h1 class="mb-3">Comics List</h1>
 
     <table class="table">
@@ -24,7 +25,10 @@
             <td><a href="{{route('comics.show', $comic)}}" class="btn btn-success">SHOW</a></td>
             <td><a href="{{route('comics.edit', $comic)}}" class="btn btn-primary">EDIT</a></td>
             <td>
-              <form action="{{route('comics.destroy', $comic)}}" method="POST">
+              <form onsubmit="return confirm('Vuoi eliminare {{$comic->title}} ?')"
+                action="{{route('comics.destroy', $comic)}}"
+                method="POST"
+              >
                 @csrf
                 @method('DELETE')
                 <button type="submit" class="btn btn-danger">DELETE</button>
